@@ -54,6 +54,21 @@
 						}
 					</style>
 					
+					<style>
+						.image {
+							width: 100%; /* Adjust the width as needed */
+							height: auto; /* Let the height adjust proportionally based on the width */
+							display: block; /* Make the image behave like a block element */
+						}
+						.image-container {
+							display: flex; /* Use flexbox for the container */
+							justify-content: center; /* Center the images horizontally */
+						}
+						.col-6 {
+							flex: 1; /* Make each column take up equal space */
+						}
+					</style>
+					
 					<div class="box video-container">
 						<video controls class="video" controls loop= "" muted = "" autoplay = "">
 							<source src="https://github.com/Jenneva-Li/jenneva-li/raw/main/images/The%20Boson%20CAD.mp4" type="video/mp4">
