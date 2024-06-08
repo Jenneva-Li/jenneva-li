@@ -6,6 +6,19 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.video-container {
+				text-align: center; /* Center the content horizontally */
+			}
+			.video {
+				width: 100%; /* Set the width to 100% of its container */
+				max-width: 800px; /* Set a maximum width to ensure it doesn't become too large */
+				height: auto; /* Let the height adjust proportionally based on the width */
+			}
+			.text-container {
+				padding: 20px; /* Add padding around the text */
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -40,57 +53,37 @@
 				</header>
 
 			<!-- Main -->
-			<section id="main" class="container">
-				<header>
-					<h2>Automated Guided Vehicle (Toyota Innovation Challenge)</h2>
-				</header>
-				<style>
-					.video-container {
-						text-align: center; /* Center the content horizontally */
-					}
-					.video {
-						width: 200%; /* Set the width to 100% of its container */
-						max-width: 800px; /* Set a maximum width to ensure it doesn't become too large */
-						height: auto; /* Let the height adjust proportionally based on the width */
-					}
-				</style>
-				<div class="box video-container">
-					<video controls class="video" controls loop= "" muted = "" autoplay = "">
-						<source src="https://github.com/Jenneva-Li/jenneva-li/raw/main/images/TMMC S24 Collision Detection.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-						</span>
+				<section id="main" class="container">
+					<header>
+						<h2>Automated Guided Vehicle (Toyota Innovation Challenge)</h2>
+					</header>
+					<div class="box video-container">
+						<video controls class="video" loop="" muted="" autoplay="">
+							<source src="https://github.com/Jenneva-Li/jenneva-li/raw/main/images/TMMC S24 Collision Detection.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
 						<h3>Demo Video of Collision Detection</h3>
-				<div class="box video-container">
-					<video controls class="video" controls loop= "" muted = "" autoplay = "">
-						<source src="https://github.com/Jenneva-Li/jenneva-li/raw/main/images/TMMC Stop Sign.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-						</span>
-						<h3>Demo Video of Stop Sign Detection</h3>
-					</article>
-				</section>
-				<style>
-					.text-container {
-						padding: 300px; /* Adjust the padding value to increase or decrease the margin */
-					}
-				</style>
-				<div class="row-6 row-12-mobilep">
-					<h3>Objective</h3>
-					<p>
-						The Toyota Motor Manufacturing Canada (TMMC) Engineering project team aims to implement a reliable solution for utilizing Automated Guided Vehicles (AGVs) to efficiently transport vehicle components to designated stations within a manufacturing environment. The AGVs must navigate from pickup to delivery points while avoiding collisions with static fixtures and other AGVs, and obeying traffic signals, such as stop signs. The primary objective is to minimize the time required for each delivery, ensuring a streamlined and efficient workflow.</p>
-					<h3>Key Points: </h3>
-					<ul>
-						<li>Developed and successfully integrated a collision detection system using Python to autonomously halt and reverse their movement upon detection of walls or other obstacles.</li>
-						<li>Utilized AprilTags to enhance autonomy; programmed the TurtleBot4 to perform specific functions upon recognizing each unique tag.</li>
-						<li>Improved the control system by integrating machine learning to enable the TurtleBot to detect and respond to stop signs, effectively training it to recognize and react to such traffic signals.</li>
-						<li>Conducted thorough validation and testing of the system, both through Gazebo simulation and on TurtleBot4, utilizing partial courses to assess functionality and performance.</li>
-					</ul>
-					<div class="row">
-						<div class="row-6 row-12-mobilep">
-						</div>
 					</div>
-				</div>
+					<div class="box video-container">
+						<video controls class="video" loop="" muted="" autoplay="">
+							<source src="https://github.com/Jenneva-Li/jenneva-li/raw/main/images/TMMC Stop Sign.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+						<h3>Demo Video of Stop Sign Detection</h3>
+					</div>
+					<div class="text-container">
+						<h3>Objective</h3>
+						<p>
+							The Toyota Motor Manufacturing Canada (TMMC) Engineering project team aims to implement a reliable solution for utilizing Automated Guided Vehicles (AGVs) to efficiently transport vehicle components to designated stations within a manufacturing environment. The AGVs must navigate from pickup to delivery points while avoiding collisions with static fixtures and other AGVs, and obeying traffic signals, such as stop signs. The primary objective is to minimize the time required for each delivery, ensuring a streamlined and efficient workflow.
+						</p>
+						<h3>Key Points: </h3>
+						<ul>
+							<li>Developed and successfully integrated a collision detection system using Python to autonomously halt and reverse their movement upon detection of walls or other obstacles.</li>
+							<li>Utilized AprilTags to enhance autonomy; programmed the TurtleBot4 to perform specific functions upon recognizing each unique tag.</li>
+							<li>Improved the control system by integrating machine learning to enable the TurtleBot to detect and respond to stop signs, effectively training it to recognize and react to such traffic signals.</li>
+							<li>Conducted thorough validation and testing of the system, both through Gazebo simulation and on TurtleBot4, utilizing partial courses to assess functionality and performance.</li>
+						</ul>
+					</div>
 				</section>
 
 			<!-- Footer -->
@@ -110,6 +103,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
